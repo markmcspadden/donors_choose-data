@@ -9,6 +9,10 @@ The DonorsChoose::Data module match up the normalized data provided by DonorsCho
 h2. Usage
 
 <pre>
+  gem install donors_choose
+</pre>
+
+<pre>  
 project = DonorsChoose::Data::Project.first
 project.donations
 school = DonorsChoose::Data::School.last
