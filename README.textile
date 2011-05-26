@@ -2,18 +2,17 @@ h1. donors_choose
 
 This library sprung from the 2011 Hacking Education contest for DonorsChoose.org. (http://www.donorschoose.org/hacking-education)
 
-The DCData module match up the normalized data provided by DonorsChoose.org to classes that inherit from ActiveRecord::Base.
+The DonorsChoose::Data module match up the normalized data provided by DonorsChoose.org to classes that inherit from ActiveRecord::Base.
 
 *This gem assumes you have loaded the DonorsChoose.org datasets into a PostgreSQL database.*
 
 h2. Usage
 
 <code>
-  project = DCData::Project.first
-  project.donations
-  
-  school = DCData::School.last
-  school.teachers
+project = DonorsChoose::Data::Project.first
+project.donations
+school = DonorsChoose::Data::School.last
+school.teachers
 </code>
 
 
@@ -22,19 +21,31 @@ h3. Rails
 If you'd like to use it in Rails, just add the following to your Gemfile:
 
 <code>
-  gem 'donors_choose'
+gem 'donors_choose'
 </code>
 
 h3. Stand alone
 
 If you'd like to use it stand alone, do the following:
 
-Copy database.yml.example to database.yml and change the credentials to match your setup
+Create a database.yml, very similar to what you'd have in Rails:
+
+bq. adapter: postgresql
+host: localhost
+username: postgres
+password: password
+port: 5432
+database: donors_choose_data
+schema_search_path: public
+
+Then, drop into irb, require the gem, and establish the db connection
 
 <code>
-  terminal$ irb
-  irb(main):001:0> require 'd_c_data'
-  irb(main):001:0> DCData.connect
-  irb(main):001:0> DCData::Project.first
+terminal$ irb
+irb(main):001:0> require 'rubygems'
+irb(main):001:0> require 'donors_choose'
+irb(main):001:0> DonorsChoose::Data.connect(YAML.load(File.read('database.yml')))
+irb(main):001:0> DonorsChoose::Data::Project.first
 </code>
+
 
