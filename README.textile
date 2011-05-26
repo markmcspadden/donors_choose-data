@@ -4,7 +4,7 @@ This library sprung from the 2011 Hacking Education contest for DonorsChoose.org
 
 The DonorsChoose::Data module match up the normalized data provided by DonorsChoose.org to classes that inherit from ActiveRecord::Base.
 
-*This gem assumes you have loaded the DonorsChoose.org datasets into a PostgreSQL database.*
+*This gem assumes you have loaded the DonorsChoose.org datasets into a PostgreSQL database and normalized the data. See the "contest documentation":http://developer.donorschoose.org/the-data/data-schema for more information.*
 
 h2. Usage
 
