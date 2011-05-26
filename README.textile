@@ -18,6 +18,7 @@ h2. Usage
 
 
 h3. Rails
+
 If you'd like to use it in Rails, just add the following to your Gemfile:
 
 <code>
@@ -25,6 +26,7 @@ If you'd like to use it in Rails, just add the following to your Gemfile:
 </code>
 
 h3. Stand alone
+
 If you'd like to use it stand alone, do the following:
 
 Copy database.yml.example to database.yml and change the credentials to match your setup

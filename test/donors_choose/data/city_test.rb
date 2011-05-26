@@ -1,9 +1,9 @@
-require File.expand_path(File.dirname(__FILE__) + '/../test_helper')
+require File.expand_path(File.dirname(__FILE__) + '/../../test_helper')
 
 class CityTest < Test::Unit::TestCase
   
   def setup
-    @city = DCData::City.first
+    @city = DonorsChoose::Data::City.first
   end
   
   def test_city_setup

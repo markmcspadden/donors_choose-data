@@ -1,5 +1,5 @@
 require 'test/unit'
 
-require File.expand_path(File.dirname(__FILE__) + "/../d_c_data")
+require File.expand_path(File.dirname(__FILE__) + "/../lib/donors_choose/data")
 
-DCData.connect
+DonorsChoose::Data.connect
