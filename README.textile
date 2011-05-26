@@ -8,21 +8,21 @@ The DonorsChoose::Data module match up the normalized data provided by DonorsCho
 
 h2. Usage
 
-<code>
-project = DonorsChoose::Data::Project.first<br/>
-project.donations<br/>
-school = DonorsChoose::Data::School.last<br/>
-school.teachers<br/>
-</code>
+@@@ruby
+project = DonorsChoose::Data::Project.first
+project.donations
+school = DonorsChoose::Data::School.last
+school.teachers
+@@@
 
 
 h3. Rails
 
 If you'd like to use it in Rails, just add the following to your Gemfile:
 
-<code>
+@@@ruby
 gem 'donors_choose'
-</code>
+@@@
 
 h3. Stand alone
 
@@ -40,12 +40,12 @@ schema_search_path: public
 
 Then, drop into irb, require the gem, and establish the db connection
 
-<code>
-terminal$ irb<br/>
-irb(main):001:0> require 'rubygems'<br/>
-irb(main):001:0> require 'donors_choose'<br/>
-irb(main):001:0> DonorsChoose::Data.connect(YAML.load(File.read('database.yml')))<br/>
-irb(main):001:0> DonorsChoose::Data::Project.first<br/>
-</code>
+@@@ruby
+terminal$ irb
+irb(main):001:0> require 'rubygems'
+irb(main):001:0> require 'donors_choose'
+irb(main):001:0> DonorsChoose::Data.connect(YAML.load(File.read('database.yml')))
+irb(main):001:0> DonorsChoose::Data::Project.first
+@@@
 
 
