@@ -3,7 +3,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../../test_helper')
 class GiftcardTest < Test::Unit::TestCase
   
   def setup
-    @giftcard = DonorsChoose::Data::Giftcard.order(:_giftcardid).first
+    @giftcard = DonorsChooseData::Data::Giftcard.order(:_giftcardid).first
   end
   
   def test_giftcard_setup

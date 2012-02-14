@@ -1,4 +1,4 @@
-module DonorsChoose
+module DonorsChooseData
   module Data
     class Resource < ActiveRecord::Base
       set_table_name :normalized_resource

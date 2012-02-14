@@ -3,7 +3,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../../test_helper')
 class ProjectTest < Test::Unit::TestCase
   
   def setup
-    @project = DonorsChoose::Data::Project.order(:_projectid).first
+    @project = DonorsChooseData::Data::Project.order(:_projectid).first
   end
   
   def test_project_setup

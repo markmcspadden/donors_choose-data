@@ -1,4 +1,4 @@
-module DonorsChoose
+module DonorsChooseData
   module Data
     class School < ActiveRecord::Base
       set_table_name :normalized_school

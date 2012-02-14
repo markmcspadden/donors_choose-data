@@ -1,7 +1,7 @@
 require 'active_record'
 require 'pg'
 
-module DonorsChoose
+module DonorsChooseData
   module Data
       
     # Use this if you're going standalone (aka sans Rails)

@@ -3,7 +3,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../../test_helper')
 class CityTest < Test::Unit::TestCase
   
   def setup
-    @city = DonorsChoose::Data::City.first
+    @city = DonorsChooseData::Data::City.first
   end
   
   def test_city_setup

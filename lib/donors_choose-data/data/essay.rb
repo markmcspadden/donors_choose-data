@@ -1,4 +1,4 @@
-module DonorsChoose
+module DonorsChooseData
   module Data
     class Essay < ActiveRecord::Base
       set_table_name :normalized_essay

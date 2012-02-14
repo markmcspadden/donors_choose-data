@@ -1,18 +1,18 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "donors_choose/version"
+require "donors_choose-data/version"
 
 Gem::Specification.new do |s|
-  s.name        = "donors_choose"
-  s.version     = DonorsChoose::VERSION
+  s.name        = "donors_choose-data"
+  s.version     = DonorsChooseData::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["steve@steveklabnik.com"]
+  s.authors     = ["markmcspadden@gmail.com"]
   s.email       = [""]
   s.homepage    = ""
-  s.summary     = %q{Libaries to assist with mining and utilizing donorschoose.org}
+  s.summary     = %q{Libaries to assist with mining data from donorschoose.org Hacking Education project}
   s.description = %q{}
 
-  s.rubyforge_project = "donors_choose"
+  s.rubyforge_project = "donors_choose-data"
   
   s.add_dependency 'activerecord', '> 3.0'
   s.add_dependency 'pg'

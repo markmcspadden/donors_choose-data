@@ -2,7 +2,7 @@ require 'test/unit'
 
 require 'rubygems'
 
-require File.expand_path(File.dirname(__FILE__) + "/../lib/donors_choose/data")
+require File.expand_path(File.dirname(__FILE__) + "/../lib/donors_choose-data/data")
 
 postgres_config = { :adapter => "postgresql",
                     :host => "localhost",

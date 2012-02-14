@@ -11,13 +11,13 @@ The DonorsChoose::Data module match up the normalized data provided by DonorsCho
 h2. Usage
 
 <pre>
-  gem install donors_choose
+  gem install donors_choose-data
 </pre>
 
 <pre>  
-project = DonorsChoose::Data::Project.first
+project = DonorsChooseData::Data::Project.first
 project.donations
-school = DonorsChoose::Data::School.last
+school = DonorsChooseData::Data::School.last
 school.teachers
 </pre>
 
@@ -27,7 +27,7 @@ h3. Rails
 If you'd like to use it in Rails, just add the following to your Gemfile:
 
 <pre>
-gem 'donors_choose'
+gem 'donors_choose-data'
 </pre>
 
 h3. Stand alone
@@ -49,7 +49,7 @@ Then, drop into irb, require the gem, and establish the db connection
 <pre>
 terminal$ irb
 irb(main):001:0> require 'rubygems'
-irb(main):001:0> require 'donors_choose'
+irb(main):001:0> require 'donors_choose-data'
 irb(main):001:0> DonorsChoose::Data.connect(YAML.load(File.read('database.yml')))
 irb(main):001:0> DonorsChoose::Data::Project.first
 </pre>

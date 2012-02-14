@@ -3,7 +3,7 @@ require File.expand_path(File.dirname(__FILE__) + '/../../test_helper')
 class ResourceTest < Test::Unit::TestCase
   
   def setup
-    @resource = DonorsChoose::Data::Resource.order(:_resourceid).first
+    @resource = DonorsChooseData::Data::Resource.order(:_resourceid).first
   end
   
   def test_resource_setup
