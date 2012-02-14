@@ -1,4 +1,6 @@
-h1. donors_choose
+h1. donors_choose-data
+
+*NOTE:* If you are looking for an API wrapper for DonorsChoose.org, please checkout https://github.com/JumpstartLab/donors_choose
 
 This library sprung from the 2011 Hacking Education contest for DonorsChoose.org. (http://www.donorschoose.org/hacking-education)
 
