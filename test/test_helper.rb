@@ -12,4 +12,4 @@ postgres_config = { :adapter => "postgresql",
                     :database => "donors_choose_data",
                     :schema_search_path => "public" }
 
-DonorsChoose::Data.connect postgres_config
+DonorsChooseData::Data.connect postgres_config
