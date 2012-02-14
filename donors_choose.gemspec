@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.name        = "donors_choose"
   s.version     = DonorsChoose::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Mark McSpadden"]
+  s.authors     = ["steve@steveklabnik.com"]
   s.email       = [""]
   s.homepage    = ""
   s.summary     = %q{Libaries to assist with mining and utilizing donorschoose.org}
