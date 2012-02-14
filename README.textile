@@ -50,8 +50,8 @@ Then, drop into irb, require the gem, and establish the db connection
 terminal$ irb
 irb(main):001:0> require 'rubygems'
 irb(main):001:0> require 'donors_choose-data'
-irb(main):001:0> DonorsChoose::Data.connect(YAML.load(File.read('database.yml')))
-irb(main):001:0> DonorsChoose::Data::Project.first
+irb(main):001:0> DonorsChooseData::Data.connect(YAML.load(File.read('database.yml')))
+irb(main):001:0> DonorsChooseData::Data::Project.first
 </pre>
 
 
